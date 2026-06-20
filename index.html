@@ -950,7 +950,7 @@
   function saveApiKey() {
     const key = document.getElementById('gemini-key-input').value.trim();
     const err = document.getElementById('api-key-error');
-    if (!key.startsWith('AIza')) {
+    if (!key) {
       err.textContent = 'That doesn\'t look like a valid Gemini key (should start with AIza).';
       return;
     }
